@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController    {
+    
+    IBOutlet UIButton *FoodPicture;
+}
 
+@property (nonatomic, strong) UISwipeGestureRecognizer *leftSwipe;
+@property (nonatomic, strong) UISwipeGestureRecognizer *rightSwipe;
+@property (nonatomic, strong) NSMutableArray *foodArray;
+
+
+- (IBAction)Button;
 
 @end
 

@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		6270C4881C0D3FA70030D318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4871C0D3FA70030D318 /* main.m */; };
 		6270C48B1C0D3FA70030D318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C48A1C0D3FA70030D318 /* AppDelegate.m */; };
-		6270C48E1C0D3FA70030D318 /* MealTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6270C48C1C0D3FA70030D318 /* MealTime.xcdatamodeld */; };
 		6270C4911C0D3FA70030D318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4901C0D3FA70030D318 /* ViewController.m */; };
 		6270C4941C0D3FA70030D318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6270C4921C0D3FA70030D318 /* Main.storyboard */; };
-		6270C4961C0D3FA70030D318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6270C4951C0D3FA70030D318 /* Images.xcassets */; };
 		6270C4991C0D3FA70030D318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6270C4971C0D3FA70030D318 /* LaunchScreen.xib */; };
 		6270C4A51C0D3FA80030D318 /* MealTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4A41C0D3FA80030D318 /* MealTimeTests.m */; };
+		6270C4B01C0E361F0030D318 /* MTRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4AF1C0E361F0030D318 /* MTRestaurant.m */; };
+		6270C4B91C0EA8DD0030D318 /* MTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4B71C0EA8DD0030D318 /* MTModel.xcdatamodeld */; };
+		62C9C34C1C0F935D00FAA6D7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */; };
+		62C9C34D1C0F935D00FAA6D7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C9C34B1C0F935D00FAA6D7 /* SecondViewController.xib */; };
+		62C9C3501C0FA1FE00FAA6D7 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C9C34F1C0FA1FE00FAA6D7 /* Restaurant.m */; };
+		62C9C3531C0FA25300FAA6D7 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C9C3521C0FA25300FAA6D7 /* Food.m */; };
+		62E708411C0FC34500C32D27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E708401C0FC34500C32D27 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +38,25 @@
 		6270C4871C0D3FA70030D318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6270C4891C0D3FA70030D318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6270C48A1C0D3FA70030D318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6270C48D1C0D3FA70030D318 /* MealTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealTime.xcdatamodel; sourceTree = "<group>"; };
 		6270C48F1C0D3FA70030D318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6270C4901C0D3FA70030D318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6270C4931C0D3FA70030D318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6270C4951C0D3FA70030D318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6270C4981C0D3FA70030D318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6270C49E1C0D3FA80030D318 /* MealTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6270C4A31C0D3FA80030D318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6270C4A41C0D3FA80030D318 /* MealTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealTimeTests.m; sourceTree = "<group>"; };
+		6270C4AE1C0E361F0030D318 /* MTRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRestaurant.h; sourceTree = "<group>"; };
+		6270C4AF1C0E361F0030D318 /* MTRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRestaurant.m; sourceTree = "<group>"; };
+		6270C4B81C0EA8DD0030D318 /* MTModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTModel.xcdatamodel; sourceTree = "<group>"; };
+		6270C4C01C0EADD30030D318 /* Food+Insertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Food+Insertion.h"; path = "../Food+Insertion.h"; sourceTree = "<group>"; };
+		62C9C3491C0F935D00FAA6D7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		62C9C34B1C0F935D00FAA6D7 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		62C9C34E1C0FA1FE00FAA6D7 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		62C9C34F1C0FA1FE00FAA6D7 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		62C9C3511C0FA25300FAA6D7 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		62C9C3521C0FA25300FAA6D7 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		62E708401C0FC34500C32D27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +98,24 @@
 		6270C4841C0D3FA70030D318 /* MealTime */ = {
 			isa = PBXGroup;
 			children = (
-				6270C4891C0D3FA70030D318 /* AppDelegate.h */,
-				6270C48A1C0D3FA70030D318 /* AppDelegate.m */,
+				6270C4C01C0EADD30030D318 /* Food+Insertion.h */,
+				62C9C3491C0F935D00FAA6D7 /* SecondViewController.h */,
+				62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */,
+				62C9C34B1C0F935D00FAA6D7 /* SecondViewController.xib */,
+				6270C4921C0D3FA70030D318 /* Main.storyboard */,
 				6270C48F1C0D3FA70030D318 /* ViewController.h */,
 				6270C4901C0D3FA70030D318 /* ViewController.m */,
-				6270C4921C0D3FA70030D318 /* Main.storyboard */,
-				6270C4951C0D3FA70030D318 /* Images.xcassets */,
+				6270C4891C0D3FA70030D318 /* AppDelegate.h */,
+				6270C48A1C0D3FA70030D318 /* AppDelegate.m */,
+				6270C4B71C0EA8DD0030D318 /* MTModel.xcdatamodeld */,
+				62C9C3511C0FA25300FAA6D7 /* Food.h */,
+				62C9C3521C0FA25300FAA6D7 /* Food.m */,
+				62C9C34E1C0FA1FE00FAA6D7 /* Restaurant.h */,
+				62C9C34F1C0FA1FE00FAA6D7 /* Restaurant.m */,
+				6270C4AE1C0E361F0030D318 /* MTRestaurant.h */,
+				6270C4AF1C0E361F0030D318 /* MTRestaurant.m */,
+				62E708401C0FC34500C32D27 /* Images.xcassets */,
 				6270C4971C0D3FA70030D318 /* LaunchScreen.xib */,
-				6270C48C1C0D3FA70030D318 /* MealTime.xcdatamodeld */,
 				6270C4851C0D3FA70030D318 /* Supporting Files */,
 			);
 			path = MealTime;
@@ -202,9 +227,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C9C34D1C0F935D00FAA6D7 /* SecondViewController.xib in Resources */,
+				62E708411C0FC34500C32D27 /* Images.xcassets in Resources */,
 				6270C4941C0D3FA70030D318 /* Main.storyboard in Resources */,
 				6270C4991C0D3FA70030D318 /* LaunchScreen.xib in Resources */,
-				6270C4961C0D3FA70030D318 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6270C48E1C0D3FA70030D318 /* MealTime.xcdatamodeld in Sources */,
+				62C9C3501C0FA1FE00FAA6D7 /* Restaurant.m in Sources */,
+				62C9C3531C0FA25300FAA6D7 /* Food.m in Sources */,
+				6270C4B01C0E361F0030D318 /* MTRestaurant.m in Sources */,
+				6270C4B91C0EA8DD0030D318 /* MTModel.xcdatamodeld in Sources */,
+				62C9C34C1C0F935D00FAA6D7 /* SecondViewController.m in Sources */,
 				6270C48B1C0D3FA70030D318 /* AppDelegate.m in Sources */,
 				6270C4911C0D3FA70030D318 /* ViewController.m in Sources */,
 				6270C4881C0D3FA70030D318 /* main.m in Sources */,
@@ -418,6 +448,7 @@
 				6270C4AA1C0D3FA80030D318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6270C4AB1C0D3FA80030D318 /* Build configuration list for PBXNativeTarget "MealTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,17 +457,18 @@
 				6270C4AD1C0D3FA80030D318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6270C48C1C0D3FA70030D318 /* MealTime.xcdatamodeld */ = {
+		6270C4B71C0EA8DD0030D318 /* MTModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				6270C48D1C0D3FA70030D318 /* MealTime.xcdatamodel */,
+				6270C4B81C0EA8DD0030D318 /* MTModel.xcdatamodel */,
 			);
-			currentVersion = 6270C48D1C0D3FA70030D318 /* MealTime.xcdatamodel */;
-			path = MealTime.xcdatamodeld;
+			currentVersion = 6270C4B81C0EA8DD0030D318 /* MTModel.xcdatamodel */;
+			path = MTModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
