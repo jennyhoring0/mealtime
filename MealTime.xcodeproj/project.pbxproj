@@ -14,7 +14,6 @@
 		6270C4991C0D3FA70030D318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6270C4971C0D3FA70030D318 /* LaunchScreen.xib */; };
 		6270C4A51C0D3FA80030D318 /* MealTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4A41C0D3FA80030D318 /* MealTimeTests.m */; };
 		6270C4B91C0EA8DD0030D318 /* MTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6270C4B71C0EA8DD0030D318 /* MTModel.xcdatamodeld */; };
-		62B26D2C1C12767C00301916 /* idk man in Resources */ = {isa = PBXBuildFile; fileRef = 62B26D2B1C12767C00301916 /* idk man */; };
 		62C9C34C1C0F935D00FAA6D7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */; };
 		62C9C34D1C0F935D00FAA6D7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C9C34B1C0F935D00FAA6D7 /* SecondViewController.xib */; };
 		62C9C3531C0FA25300FAA6D7 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C9C3521C0FA25300FAA6D7 /* Food.m */; };
@@ -46,7 +45,6 @@
 		6270C4A41C0D3FA80030D318 /* MealTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealTimeTests.m; sourceTree = "<group>"; };
 		6270C4B81C0EA8DD0030D318 /* MTModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTModel.xcdatamodel; sourceTree = "<group>"; };
 		6270C4C01C0EADD30030D318 /* Food+Insertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Food+Insertion.h"; path = "../Food+Insertion.h"; sourceTree = "<group>"; };
-		62B26D2B1C12767C00301916 /* idk man */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "idk man"; path = "../../../../../Desktop/idk man"; sourceTree = "<group>"; };
 		62B99E5A1C112CBF00EEBDDA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		62C9C3491C0F935D00FAA6D7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			children = (
 				6270C4C01C0EADD30030D318 /* Food+Insertion.h */,
 				62C9C3491C0F935D00FAA6D7 /* SecondViewController.h */,
-				62B26D2B1C12767C00301916 /* idk man */,
 				62C9C34A1C0F935D00FAA6D7 /* SecondViewController.m */,
 				62C9C34B1C0F935D00FAA6D7 /* SecondViewController.xib */,
 				6270C4921C0D3FA70030D318 /* Main.storyboard */,
@@ -223,7 +220,6 @@
 			files = (
 				62C9C34D1C0F935D00FAA6D7 /* SecondViewController.xib in Resources */,
 				62E708411C0FC34500C32D27 /* Images.xcassets in Resources */,
-				62B26D2C1C12767C00301916 /* idk man in Resources */,
 				6270C4941C0D3FA70030D318 /* Main.storyboard in Resources */,
 				6270C4991C0D3FA70030D318 /* LaunchScreen.xib in Resources */,
 			);

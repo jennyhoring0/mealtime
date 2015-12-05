@@ -260,6 +260,14 @@
     [food setValue:@32 forKey:@"foodID"];
     [food setValue:@"Spring Rolls" forKey:@"recipeName"];
     [food setValue:@"http://www.foodnetwork.com/recipes/mushroom-and-leek-spring-rolls-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@32 forKey:@"foodID"];
+    [food setValue:@"Arancini" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/food-network-kitchens/arancini-recipe.html" forKey:@"recipeURL"];
 
 
 
