@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController;
+@property (nonatomic, strong) NSArray *foodArray;
+@property (nonatomic) NSUInteger i;
+- (IBAction)link:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *Name;
+- (IBAction)Back:(id)sender;
 
-- (IBAction)link;
+
+//@protocol SecondViewController;
+//@interface SecondViewController: UIViewController
+//@property (nonatomic, assign) id<SecondViewController> delegate;
+//@end
+//@protocol SecondViewController <NSObject>
+//- (void)secondViewController:(SecondViewController *)controller didTappedOnButton:(UIButton *)button;
+//@end
+
 
 @end

@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController    {
-    
     IBOutlet UIButton *FoodPicture;
 }
 
 @property (nonatomic, strong) UISwipeGestureRecognizer *leftSwipe;
 @property (nonatomic, strong) UISwipeGestureRecognizer *rightSwipe;
-@property (nonatomic, strong) NSMutableArray *foodArray;
+@property (nonatomic, strong) NSArray *foodArray;
 
 
-- (IBAction)Button;
+- (IBAction)Button:(id)sender;
 
 @end
-

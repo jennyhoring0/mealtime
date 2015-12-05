@@ -7,12 +7,12 @@
 //
 
 #import "Food.h"
-#import "Restaurant.h"
 
 
 @implementation Food
 
-@dynamic uniqueString;
-@dynamic whoCookedIt;
+@dynamic foodID;
+@dynamic recipeURL;
+@dynamic recipeName;
 
 @end

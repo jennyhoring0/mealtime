@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Jennifer Horing. All rights reserved.
 //
 
-#import "Food.h"
-
-@interface Food (Insertion)
-
-+ (Food *)photoWithRestaurantInfo:(NSDictionary *)photoDictionary
-          inManagedObjectsContext:(NSManagedObjectContext *)context;
-
-@end
+//#import "Food.h"
+//
+//@interface Food (Insertion)
+//
+//+ (Food *)photoWithRestaurantInfo:(NSDictionary *)photoDictionary
+//          inManagedObjectsContext:(NSManagedObjectContext *)context;
+//
+//@end

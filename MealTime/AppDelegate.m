@@ -16,8 +16,254 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@1 forKey:@"foodID"];
+    [food setValue:@"Absurdly Addictive Asparagus" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/4023-absurdly-addictive-asparagus" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@2 forKey:@"foodID"];
+    [food setValue:@"Cinnamon Sugar Breakfast Puffs" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/15110-cinnamon-sugar-breakfast-puffs" forKey:@"recipeURL"];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@3 forKey:@"foodID"];
+    [food setValue:@"Magical Marvelous Memorable Cookies" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/8595-magical-marvelous-memorable-cookies" forKey:@"recipeURL"];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@4 forKey:@"foodID"];
+    [food setValue:@"Eggplant Parmesan" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/431-eggplant-parmesan" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@5 forKey:@"foodID"];
+    [food setValue:@"Maple Glazed Pork Shoulder With Cripsy Skin" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/3909-matilda-maple-and-garlic-pork-shoulder-with-crispy-skin" forKey:@"recipeURL"];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@6 forKey:@"foodID"];
+    [food setValue:@"Crunchy, Dill Sweet-Corn Salad with Buttermilk Dressing" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/12928-dilled-crunchy-sweet-corn-salad-with-buttermilk-dressing" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@7 forKey:@"foodID"];
+    [food setValue:@"Really Good Spaghetti Bolognese" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/26984-nigel-slater-s-really-good-spaghetti-bolognese" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@8 forKey:@"foodID"];
+    [food setValue:@"Spicy Shrimp" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/246-spicy-shrimp" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@9 forKey:@"foodID"];
+    [food setValue:@"4-Hour Baguette" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/27433-dan-leader-s-4-hour-baguette" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@10 forKey:@"foodID"];
+    [food setValue:@"Creamy-Sausage Stuffed Mushrooms" forKey:@"recipeName"];
+    [food setValue:@"http://food52.com/recipes/3110-creamy-sausage-stuffed-mushrooms" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    [food setValue:@11 forKey:@"foodID"];
+    [food setValue:@"15-Minute Candy-Stuffed Pancakes" forKey:@"recipeName"];
+    [food setValue:@"https://spoonuniversity.com/cook/15-minute-candy-stuffed-pancakes/?utm_source=buzzfeed&utm_medium=referral&utm_campaign=content-partnerships" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@12 forKey:@"foodID"];
+    [food setValue:@"Gnocchi with Sautéed Mushrooms and Bacon" forKey:@"recipeName"];
+    [food setValue:@"http://www.adorefoods.com/toasted-gnocchi-sauteed-mushrooms-crispy-bacon-caramelized-spring-onions/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@13 forKey:@"foodID"];
+    [food setValue:@"Chicken Penne with Tomato and Basil" forKey:@"recipeName"];
+    [food setValue:@"http://www.dishingdelish.com/one-pot-chicken-penne-tomato-basil/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@14 forKey:@"foodID"];
+    [food setValue:@"Chicken Enchiladas" forKey:@"recipeName"];
+    [food setValue:@"http://www.recipetineats.com/one-pot-chicken-enchilada-rice-casserole/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    
+    [food setValue:@15 forKey:@"foodID"];
+    [food setValue:@"Easy Baked Chicken Tenders" forKey:@"recipeName"];
+    [food setValue:@"http://www.allergyfreealaska.com/2013/04/15/easy-baked-paleo-chicken-tenders-with-honey-mustard-dipping-sauce/" forKey:@"recipeURL"];
+    
+    [[self managedObjectContext] save:NULL];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@16 forKey:@"foodID"];
+    [food setValue:@"Chicken Marsala" forKey:@"recipeName"];
+    [food setValue:@"http://theviewfromgreatisland.com/chicken-thighs-marsala-two/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@17 forKey:@"foodID"];
+    [food setValue:@"Coq-Au-Vin" forKey:@"recipeName"];
+    [food setValue:@"http://vikalinka.com/2015/02/03/coq-au-vin-the-ultimate-one-pot-dinner/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+
+    [food setValue:@18 forKey:@"foodID"];
+    [food setValue:@"Kung Pao Chicken" forKey:@"recipeName"];
+    [food setValue:@"http://flavormosaic.com/easy-kung-pao-chicken-recipe/" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
     return YES;
+    
+    [food setValue:@19 forKey:@"foodID"];
+    [food setValue:@"Lemon Ricotta Cookies with Glaze" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/giada-de-laurentiis/lemon-ricotta-cookies-with-lemon-glaze-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@20 forKey:@"foodID"];
+    [food setValue:@"Baby-Back Ribs" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/alton-brown/who-loves-ya-baby-back-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@21 forKey:@"foodID"];
+    [food setValue:@"Chips and Guacamole" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/alton-brown/guacamole-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@22 forKey:@"foodID"];
+    [food setValue:@"Asian Grilled Salmon" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/alton-brown/guacamole-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+
+    [food setValue:@23 forKey:@"foodID"];
+    [food setValue:@"Chicken Pot Pie" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/ina-garten/chicken-pot-pie-recipe.html" forKey:@"recipeURL"];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@24 forKey:@"foodID"];
+    [food setValue:@"Kale Salad" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/aarti-sequeira/massaged-kale-salad-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@25 forKey:@"foodID"];
+    [food setValue:@"French Toast" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/alton-brown/french-toast-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@26 forKey:@"foodID"];
+    [food setValue:@"Shrimp Scampi" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/ina-garten/linguine-with-shrimp-scampi-recipe3.html" forKey:@"recipeURL"];
+
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@27 forKey:@"foodID"];
+    [food setValue:@"Cauliflower and Tomatoes" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/food-network-kitchens/cauliflower-with-tomatoes-recipe.html" forKey:@"recipeURL"];
+
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@28 forKey:@"foodID"];
+    [food setValue:@"Sesame Eggplant" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/food-network-kitchens/sesame-eggplant-recipe2.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@29 forKey:@"foodID"];
+    [food setValue:@"Potato Skins" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/food-network-kitchens/maple-bacon-potato-skins-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@30 forKey:@"foodID"];
+    [food setValue:@"Tabouleh" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/tabouleh-salad-recipe.html" forKey:@"recipeURL"];
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@31 forKey:@"foodID"];
+    [food setValue:@"Antipasti Platter" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/giada-de-laurentiis/antipasti-platter-recipe.html" forKey:@"recipeURL"];
+    
+    
+    food =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
+    return YES;
+    
+    [food setValue:@32 forKey:@"foodID"];
+    [food setValue:@"Spring Rolls" forKey:@"recipeName"];
+    [food setValue:@"http://www.foodnetwork.com/recipes/mushroom-and-leek-spring-rolls-recipe.html" forKey:@"recipeURL"];
+
+
+
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -60,7 +306,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"MealTime" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"MTModel" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }

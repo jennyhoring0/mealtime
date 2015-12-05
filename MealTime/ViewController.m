@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Food.h"
 #import "SecondViewController.h"
+#import "AppDelegate.h"
 
 
 
@@ -16,6 +17,7 @@
 
 // @property to store the food objects to display
 @property (nonatomic) NSUInteger i;
+@property (nonatomic) NSUInteger currentIndex;
 
 @end
 
@@ -36,12 +38,15 @@
     // [Food ...]
     // now you have an array, swipe gives you an index into this array
     // self.foodArray
-    //NSManagedObjectContext *context = aDocument.managedObjectContext;
-//    NSManagedObjectContext *context;
-//    NSManagedObject *food =
-//        [NSEntityDescription insertNewObjectForEntityForName:@"Food" inManagedObjectContext: context];
-//    [food setValue:@"Tasty" forKey:@"uniqueString"];
-//    [self.foodArray addObject:food];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    AppDelegate* del = [[UIApplication sharedApplication] delegate];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Food" inManagedObjectContext: [del managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error = nil;
+    self.foodArray = [[del managedObjectContext] executeFetchRequest:fetchRequest error:&error];
     
     NSUInteger count = [_foodArray count];
     NSUInteger r = arc4random_uniform(1000);
@@ -60,31 +65,44 @@
 
 -(void)handlesSwipe: (UISwipeGestureRecognizer *) sender {
     if (sender.direction == UISwipeGestureRecognizerDirectionLeft) {
+        Food* current = [_foodArray objectAtIndex:_i];
         
-        [FoodPicture setTitle:@"Nochs" forState:UIControlStateNormal];
-        [FoodPicture setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [FoodPicture setBackgroundImage:[UIImage imageNamed:@"Nochs.jpg"] forState:UIControlStateNormal];
+        [FoodPicture setTitle:nil forState:UIControlStateNormal];
+//        [FoodPicture setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [FoodPicture
+                     setBackgroundImage: [UIImage imageNamed:[NSString stringWithFormat:@"%d.png", [current.foodID intValue]]]
+                     forState:UIControlStateNormal];
+        
         // update index and then tell the UI to update (custom function )
         
-        NSUInteger previous = self.i - 1;
-        [_foodArray objectAtIndex:previous];
-        [FoodPicture setBackgroundImage:[UIImage imageNamed:@"%@"] forState:UIControlStateNormal];
-        self.i = self.i - 1;
+//        NSUInteger previous = self.i - 1;
+//        [_foodArray objectAtIndex:previous];
+//        [FoodPicture setBackgroundImage:[UIImage imageNamed:@"Nochs.jpg"] forState:UIControlStateNormal];
+        NSLog(@"%lu and count %lu", (unsigned long)self.i, (unsigned long) [_foodArray count]);
+        self.currentIndex = self.i;
+        self.i = (self.i - 1) % [_foodArray count];
+        
     }
     
     if (sender.direction == UISwipeGestureRecognizerDirectionRight) {
-        [FoodPicture setTitle:@"Tasty" forState:UIControlStateNormal];
-        [FoodPicture setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [FoodPicture setBackgroundImage:[UIImage imageNamed:@"Tasty.jpg"] forState:UIControlStateNormal];
+        Food* current = [_foodArray objectAtIndex:_i];
         
-        NSUInteger next = self.i + 1;
-        [FoodPicture setBackgroundImage:[UIImage imageNamed:@"%@", [_foodArray objectAtIndex:next]] forState:UIControlStateNormal];
-        self.i = self.i + 1;
+        [FoodPicture setTitle:nil forState:UIControlStateNormal];
+//        [FoodPicture setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [FoodPicture
+         setBackgroundImage: [UIImage imageNamed:[NSString stringWithFormat:@"%d.png", [current.foodID intValue]]]
+         forState:UIControlStateNormal];
+        
+        NSLog(@"%lu and count %lu", (unsigned long)self.i, (unsigned long) [_foodArray count]);
+        self.currentIndex = self.i;
+        self.i = (self.i + 1) % [_foodArray count];
+        }
     }
-}
 
-- (IBAction)Button {
+- (IBAction)Button:(id)sender {
     SecondViewController *second = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
+    second.foodArray = _foodArray;
+    second.i = _currentIndex;
     [self presentViewController:second animated:YES completion:NULL];
 }
 

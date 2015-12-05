@@ -7,6 +7,10 @@
 //
 
 #import "SecondViewController.h"
+#import "ViewController.h"
+#import "AppDelegate.h"
+#import "Food.h"
+
 
 @interface SecondViewController ()
 
@@ -14,8 +18,23 @@
 
 @implementation SecondViewController
 
-- (IBAction)link {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.tastyburger.com/"]];
+-(IBAction)Back:(id)sender {
+    ViewController *first = [[ViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:first animated:YES completion:NULL];
+}
+
+//-(IBAction)buttonTapped:(UIButton)sender
+//{
+    
+//}
+
+@synthesize foodArray;
+@synthesize i;
+
+-(IBAction)link:(id)sender  {
+    Food* current = [foodArray objectAtIndex:i];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:current.recipeURL]];
+    
 }
 
 
@@ -23,6 +42,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    Food* current = [foodArray objectAtIndex:i];
+    NSLog(@"%lu and count %lu", (unsigned long)i, (unsigned long) [foodArray count]);
+    [self.Name setTitle:current.recipeName forState:UIControlStateNormal];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

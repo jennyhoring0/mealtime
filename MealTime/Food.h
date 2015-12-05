@@ -9,19 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Restaurant;
+
 
 @interface Food : NSManagedObject
 
-@property (nonatomic, retain) NSString * uniqueString;
-@property (nonatomic, retain) NSSet *whoCookedIt;
+@property (nonatomic) NSNumber * foodID;
+@property (nonatomic, retain) NSString * recipeURL;
+@property (nonatomic, retain) NSString * recipeName;
 @end
 
-@interface Food (CoreDataGeneratedAccessors)
-
-- (void)addWhoCookedItObject:(Restaurant *)value;
-- (void)removeWhoCookedItObject:(Restaurant *)value;
-- (void)addWhoCookedIt:(NSSet *)values;
-- (void)removeWhoCookedIt:(NSSet *)values;
-
-@end
